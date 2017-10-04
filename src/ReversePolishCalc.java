@@ -42,6 +42,7 @@ public class ReversePolishCalc {
                 case "/":
                 number2 = pop();
                 number1 = pop();
+                push(number1 / number2);
                 break;
                 default:
                     push(Double.parseDouble(tokens[i]));
